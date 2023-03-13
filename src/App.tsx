@@ -9,7 +9,7 @@ function App() {
   const [card, setCard] = useState<Scry.Card>()
 
 
-  async function getCardByName(cardName?: string): Promise<Scry.Card> {
+  async function getCardByName(cardName?: string) {
     return await Scry.Cards.byName("negate")
   }
 
@@ -17,7 +17,7 @@ function App() {
 
 
   useEffect(() => {
-    getCardByName().then(res => setCard(res))
+    getCardByName()
 
   }, [])
   return (

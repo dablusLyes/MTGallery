@@ -1,7 +1,7 @@
 import React from 'react'
 import * as Scry from 'scryfall-sdk';
 
-function Card(card: Scry.Card) {
+function Card(card) {
 
     return (
         <div>{card?.name}</div>
