@@ -17,7 +17,7 @@ function App() {
 
 
   useEffect(() => {
-    getCardByName()
+    getCardByName().then((res) => setCard(res))
 
   }, [])
   return (
