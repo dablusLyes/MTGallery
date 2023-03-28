@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.suggestions{
+  max-height: 250px;
+  background-color: #444444;
+  overflow: auto;
+}
+
+.suggestion:hover{
+  background-color: #616161;
+  cursor: pointer;
+}
